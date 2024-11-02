@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About - Raju S. Khatiwada">
+    <meta name="author" content="ScientificFREAK">
+    
+    <title>About | Raju S. Khatiwada</title>
+
+    <link rel="shortcut icon" href="assets/images/gt_favicon.png">
+    
+    <!-- Updated Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Updated Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Updated Fonts with font-display for optimization -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700&display=swap">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <style>
+        /* Parallax Effect */
+        .parallax {
+            background-image: url('assets/images/background.jpg'); /* Replace with your actual background image */
+            height: 475px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="about">
+
+<header id="header">
+    <div id="head" class="parallax" parallax-speed="5">
+        <h1 id="logo" class="text-center">
+            <img class="img-circle" src="assets/images/raju.jpg" alt="Profile Picture">
+            <span class="title">Raju S. Khatiwada</span>
+            <span class="tagline">Independent Researcher/ Prospective PhD Student in Physics<br>
+                <a href="mailto:r.khatiwada@goldengate.edu.np">r.khatiwada@goldengate.edu.np</a></span>
+        </h1>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-sticky">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.flickr.com/photos/scientificfreak/" target="_blank" rel="noopener noreferrer">Photography</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://medium.com/@scientificfreak" target="_blank" rel="noopener noreferrer">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main id="main">
+    <div class="container">
+        <!-- Placeholder content area left intentionally blank for future additions -->
+        <div class="row section topspace">
+            <div class="col-12 text-center">
+                <!-- Blank space to add content later -->
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Section on the Left -->
+            <div class="col-md-4 widget text-md-left text-center mb-4 mb-md-0">
+                <h3 class="widget-title">Contact</h3>
+                <div class="widget-body">
+                    <p>+977 984 271 1942<br>
+                    <a href="mailto:r.khatiwada@goldengate.edu.np">r.khatiwada@goldengate.edu.np</a><br><br></p>    
+                </div>
+            </div>
+
+            <!-- Follow Me Section Centered -->
+            <div class="col-md-4 widget text-center mb-4 mb-md-0">
+                <h3 class="widget-title">Follow Me</h3>
+                <div class="widget-body">
+                    <p class="follow-me-icons d-flex justify-content-center">
+                        <a href="https://twitter.com/rskhatiwada_np" target="_blank" class="mx-2"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/rskhatiwada" target="_blank" class="mx-2"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/rs-khatiwada-ba35364b/" target="_blank" class="mx-2"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://instagram.com/yourprofile" target="_blank" class="mx-2"><i class="fab fa-instagram"></i></a>
+                        <a href="https://scholar.google.com/citations?user=B1MdEGwAAAAJ&hl=en" target="_blank" class="mx-2"><i class="fas fa-graduation-cap"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- About Section on the Right -->
+            <div class="col-md-4 widget text-md-right text-center">
+                <h3 class="widget-title">Favorite Quote</h3>
+                <div class="widget-body">
+                    <p>"Somewhere, Something Incredible is waiting to be Known" -Carl Sagan</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<footer id="underfooter">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-md-left text-center">
+                <p>Kathmandu, Nepal</p>
+            </div>
+            <div class="col-md-6 text-md-right text-center">
+                <p>&copy; 2024, rskhatiwada</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Updated JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Parallax Scrolling JavaScript
+    window.addEventListener('scroll', function() {
+        let parallax = document.querySelector('.parallax');
+        let scrollPosition = window.pageYOffset;
+        parallax.style.backgroundPositionY = (scrollPosition * 0.5) + 'px';
+    });
+</script>
+</body>
+</html>
