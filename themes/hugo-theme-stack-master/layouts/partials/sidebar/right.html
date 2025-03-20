@@ -1,0 +1,30 @@
+{{- $scope := default "homepage" .Scope -}}
+{{- $context := .Context -}}
+{{- $TOCEnabled := .Context.Params.toc | default false -}}
+{{- $ArchivesEnabled := .Context.Params.archives | default true -}}
+{{- $SearchEnabled := .Context.Params.search | default true -}}
+{{- $ReadingTimeEnabled := .Context.Params.readingtime | default true -}}
+
+<aside class="sidebar right-sidebar sticky">
+    {{ if $TOCEnabled }}
+        {{ partial "widget/toc.html" (dict "Context" $context) }}
+    {{ else }}
+        {{- with (index .Context.Site.Params.widgets $scope) -}}
+            {{ range $widget := . }}
+                {{ if or 
+                    (and (eq .type "archives") (not $ArchivesEnabled)) 
+                    (and (eq .type "search") (not $SearchEnabled)) 
+                    (and (eq .type "readingtime") (not $ReadingTimeEnabled)) 
+                }}
+                    {{ continue }} {{/* Skip archives, search, or reading time if disabled in front matter */}}
+                {{ end }}
+                {{ if templates.Exists (printf "partials/widget/%s.html" .type) }}
+                    {{- $params := default dict .params -}}
+                    {{ partial (printf "widget/%s" .type) (dict "Context" $context "Params" $params) }}
+                {{ else }}
+                    {{ warnf "Widget %s not found" .type }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+</aside>

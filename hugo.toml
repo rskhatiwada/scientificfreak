@@ -1,0 +1,94 @@
+baseURL = "https://scientificfreak.com"
+languageCode = 'en-us'
+title = 'Raju S. Khatiwada'
+theme = 'hugo-theme-stack-master'
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  author = "authors"
+
+[[menu.social]]
+name = "Twitter"
+url = "https://twitter.com/rskhatiwada_np"
+
+
+[[menu.social]]
+name = "GitHub"
+url = "https://github.com/rskhatiwada"
+
+[[menu.social]]
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/rs-khatiwada-ba35364b/"
+
+
+[[menu.social]]
+name = "Instagram"
+url = "https://instagram.com/rskhatiwada"
+
+
+[[menu.social]]
+name = "Google Scholar"
+url = "https://scholar.google.com/citations?user=B1MdEGwAAAAJ&hl=en"
+
+[params.widgets]
+page = [
+    { type = "toc" },          # Table of Contents
+    { type = "search" },       # Search Box
+    { type = "archives" },      # Archives (by year)
+    { type = "categories" },   # List of Categories
+    { type = "tag-cloud" },    # Tag Cloud
+]
+
+
+
+[params]
+favicon = "images/favicon.png"
+math = true
+minify = true
+
+
+authorName = "Raju S. Khatiwada"
+authorUrl = "https://scientificfreak.com"
+
+
+
+
+[related]
+  includeNewer = true
+  threshold = 80   # Lower threshold to include more matches
+  toLower = false
+
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+
+  [[related.indices]]
+    name = "categories"
+    weight = 80
+
+  [[related.indices]]
+    name = "title"
+    weight = 10
+    pattern = "(\\w+)"
+
+  [[related.indices]]
+    name = "summary"
+    weight = 5
+    pattern = "(\\w+)"
+
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ['html', 'rss']
+  taxonomy = ['html']
+  term = ['html']
+
+  
+
+[feed]
+  rss = "true"  # Ensure RSS is generated
+  # Optionally, customize the RSS feed properties
+  title = "Your Website RSS Feed"
+  description = "Latest updates and posts from Your Website"
+  language = "en"

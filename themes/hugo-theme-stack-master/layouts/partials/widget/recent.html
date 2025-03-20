@@ -1,0 +1,10 @@
+<div class="recent-posts-widget">
+    <h3>Recent Posts</h3>
+    <ul>
+        {{ range .Site.RegularPages }}
+            {{ if .IsPublished }}
+                <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+            {{ end }}
+        {{ end }}
+    </ul>
+</div>

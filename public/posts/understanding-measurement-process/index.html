@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel="canonical" href="http://localhost:1313/posts/understanding-measurement-process/"><meta name='description' content="Measurement is the process of knowing the value of a physical quantity. The reason for measuring something is to know the degree or order of an attribute.">
+<title>Understanding Measurement Process - All you need to know.</title>
+
+<link rel="stylesheet" href="/scss/style.min.5e9f65f6e2d6234142755f3edd7aa60f1c49129db5fb99e8ccb1474a5108036d.css"><meta property='og:title' content='Understanding Measurement Process - All you need to know.'>
+<meta property='og:description' content='&lt;p&gt;Measurement is the process of knowing the value of a physical quantity. The reason for measuring something is to know the degree or order of an attribute.&lt;/p&gt;
+&lt;p&gt;For example, if you want to know the mass of something or the weight of something, you try to measure it. But measurement is possible only when you compare the given thing with some standard. The standard has to be such that people all over the world can agree on the value represented by the standard. Currently, for the sake of universality and objectivity, we use the MKS system of units which is also called the S.I system of units. In the MKS system of units, we use the unit of meter for length, kilograms for mass, and seconds for time. But there are other systems of units as well. We need to refer to the conversion ratio to convert a given quantity from one system of units to another.&lt;/p&gt;'>
+<meta property='og:url' content='http://localhost:1313/posts/understanding-measurement-process/'>
+<meta property='og:site_name' content='Raju S. Khatiwada'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='measurement' /><meta property='article:tag' content='uncertainty' /><meta property='article:tag' content='units of measurement' /><meta property='article:published_time' content='2024-04-12T09:41:28&#43;05:45'/><meta property='article:modified_time' content='2024-04-12T09:41:28&#43;05:45'/>
+
+<meta property='og:image' content='http://localhost:1313/images/understanding-measurement-process.webp' />
+
+<meta name="twitter:title" content="Understanding Measurement Process - All you need to know.">
+<meta name="twitter:description" content="&lt;p&gt;Measurement is the process of knowing the value of a physical quantity. The reason for measuring something is to know the degree or order of an attribute.&lt;/p&gt;
+&lt;p&gt;For example, if you want to know the mass of something or the weight of something, you try to measure it. But measurement is possible only when you compare the given thing with some standard. The standard has to be such that people all over the world can agree on the value represented by the standard. Currently, for the sake of universality and objectivity, we use the MKS system of units which is also called the S.I system of units. In the MKS system of units, we use the unit of meter for length, kilograms for mass, and seconds for time. But there are other systems of units as well. We need to refer to the conversion ratio to convert a given quantity from one system of units to another.&lt;/p&gt;">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/images/understanding-measurement-process.webp" />
+
+    <link rel="shortcut icon" href="/images/favicon.png" />
+
+
+        
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Raju S. Khatiwada",
+    "url": "http:\/\/localhost:1313\/",
+    "description": "",
+    "publisher": {
+      "@type": "Organization",
+      "name": ""
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "http:\/\/localhost:1313\/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+</script>
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Understanding Measurement Process - All you need to know.",
+    "description": "Measurement is the process of knowing the value of a physical quantity. The reason for measuring something is to know the degree or order of an attribute.",
+    "image": "http:\/\/localhost:1313\/images\/understanding-measurement-process.webp",
+    "author": {
+      "@type": "Person",
+      "name": "Raju S. Khatiwada",
+      "url": "https:\/\/scientificfreak.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Raju S. Khatiwada",
+      "logo": {
+        "@type": "ImageObject",
+        "url": ""
+      }
+    },
+    "datePublished": "2024-04-12T09:41:28Z",
+    "dateModified": "2024-04-12T09:41:28Z",
+    "url": "http:\/\/localhost:1313\/posts\/understanding-measurement-process\/"
+  }
+</script>
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "http:\/\/localhost:1313\/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Understanding Measurement Process - All you need to know.",
+        "item": "http:\/\/localhost:1313\/posts\/understanding-measurement-process\/"
+      }
+    ]
+  }
+</script>
+
+  
+       
+    </head>
+    <body class="
+    article-page
+    
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_c08ff3a9528b9915.png" width="300"
+                            height="307" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Raju S. Khatiwada</a></h1>
+            <h2 class="site-description"></h2>
+        </div>
+    </header><ol class="menu-social">
+        
+            <li>
+                <a href='https://github.com/rskhatiwada' target="_blank" rel="me">
+                    
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
+                        </svg>
+
+                    
+                </a>
+            </li>
+        
+            <li>
+                <a href='https://scholar.google.com/citations?user=B1MdEGwAAAAJ&amp;hl=en' target="_blank" rel="me">
+                    
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world-www" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <circle cx="12" cy="12" r="9"></circle>
+                            <line x1="3.6" y1="9" x2="20.4" y2="9"></line>
+                            <line x1="3.6" y1="15" x2="20.4" y2="15"></line>
+                            <path d="M12 3a17 17 0 0 1 0 18"></path>
+                            <path d="M12 3a17 17 0 0 0 0 18"></path>
+                            <path d="M6 6h.01"></path>
+                            <path d="M9 6h.01"></path>
+                            <path d="M15 6h.01"></path>
+                            <path d="M18 6h.01"></path>
+                          </svg>
+                    
+                </a>
+            </li>
+        
+            <li>
+                <a href='https://instagram.com/rskhatiwada' target="_blank" rel="me">
+                    
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <line x1="16.5" y1="7.5" x2="16.5" y2="7.51"></line>
+                        </svg>
+                    
+                </a>
+            </li>
+        
+            <li>
+                <a href='https://www.linkedin.com/in/rs-khatiwada-ba35364b/' target="_blank" rel="me">
+                    
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                            <line x1="8" y1="11" x2="8" y2="16"></line>
+                            <line x1="8" y1="8" x2="8" y2="8.01"></line>
+                            <path d="M12 16v-5a2 2 0 1 1 4 0v5"></path>
+                        </svg>
+                    
+                </a>
+            </li>
+        
+            <li>
+                <a href='https://twitter.com/rskhatiwada_np' target="_blank" rel="me">
+                    
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M22 4.01c-1 .5 -1.9 .4 -2.9 1.1c.4 -.6 .7 -1.1 .8 -1.8c-1 .5 -2 .9 -3.2 1.2c-1.9 -2 -5.1 -2 -7.1 .1c-2.1 2.2 -2.2 6 -1 8.4c-4.5 -.2 -8.5 -2.4 -11.2 -5.5c-1.6 3.5 .4 7.9 3.6 9c-1 .2 -2 .3 -2.9 .1c.8 2.4 3 4.1 5.6 4.2c-2.2 1.6 -5 2.3 -7.7 2c3 1.9 6.6 2.6 10.1 1.9c5.6 -1 9.6 -5.9 9.8 -11.4c.9 -.7 1.7 -1.6 2.3 -2.6c-.8 .4 -1.7 .7 -2.6 .8c.9 -.7 1.5 -1.6 1.9 -2.7z"></path>
+                        </svg>
+                    
+                </a>
+            </li>
+        
+    </ol>
+
+
+    
+    <ol class="menu" id="main-menu">
+        <li class="current">
+            <a href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z"></path>
+                    <polyline points="5 12 3 12 12 3 21 12 19 12"></polyline>
+                    <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
+                    <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path>
+                </svg>
+                <span>Home</span>
+            </a>
+        </li>
+        <li>
+            <a href="/links/">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z"></path>
+                    <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"></path>
+                    <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"></path>
+                </svg>
+                <span>Links</span>
+            </a>
+        </li>
+        <li>
+            <a href="/search/">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z"></path>
+                    <circle cx="10" cy="10" r="7"></circle>
+                    <line x1="21" y1="21" x2="15" y2="15"></line>
+                </svg>
+                <span>Search</span>
+            </a>
+        </li>
+        <li>
+            <a href="/archives/">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z"></path>
+                    <rect x="3" y="4" width="18" height="4" rx="2"></rect>
+                    <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10"></path>
+                    <line x1="10" y1="12" x2="14" y2="12"></line>
+                </svg>
+                <span>Archives</span>
+            </a>
+        </li>
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+<aside class="sidebar right-sidebar sticky">
+    
+                
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#can-we-measure-everything">Can we measure everything?</a></li>
+    <li><a href="#units-of-measurement">Units of measurement</a></li>
+    <li><a href="#understanding-accuracy-and-precision">Understanding Accuracy and Precision</a></li>
+    <li><a href="#measurement-errors">Measurement Errors</a></li>
+  </ul>
+</nav>
+        </div>
+    </section>
+
+                
+            
+                
+                <form action="/search/" class="search-form widget" >
+        <p>
+            <label>Search</label>
+            <input name="keyword" required placeholder="Type something..." />
+        
+            <button title="Search">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+            </button>
+        </p>
+    </form>
+                
+            
+                
+                    
+                
+                <section class="widget tagCloud">
+    <div class="widget-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+    </div>
+    <h2 class="widget-title section-title">Categories</h2>
+
+    <div class="tagCloud-tags">
+        
+            <a href="/categories/opinion/" class="font_size_26">
+                Opinion
+            </a>
+        
+            <a href="/categories/science/" class="font_size_18">
+                Science
+            </a>
+        
+            <a href="/categories/current/" class="font_size_12">
+                Current
+            </a>
+        
+            <a href="/categories/philosophy/" class="font_size_12">
+                Philosophy
+            </a>
+        
+            <a href="/categories/physics/" class="font_size_7">
+                Physics
+            </a>
+        
+            <a href="/categories/research/" class="font_size_3">
+                Research
+            </a>
+        
+            <a href="/categories/technology/" class="font_size_2">
+                Technology
+            </a>
+        
+            <a href="/categories/maths/" class="font_size_1">
+                Maths
+            </a>
+        
+            <a href="/categories/quantum/" class="font_size_1">
+                Quantum
+            </a>
+        
+    </div>
+</section>
+
+                
+            
+                
+                <section class="widget tagCloud">
+    <div class="widget-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
+  <circle cx="9" cy="9" r="2" />
+</svg>
+
+
+
+    </div>
+    <h2 class="widget-title section-title">Tags</h2>
+
+    <div class="tagCloud-tags">
+        
+            <a href="/tags/einstein/" class="font_size_3">
+                Einstein
+            </a>
+        
+            <a href="/tags/time-dilation/" class="font_size_3">
+                Time Dilation
+            </a>
+        
+            <a href="/tags/atom/" class="font_size_2">
+                Atom
+            </a>
+        
+            <a href="/tags/belief/" class="font_size_2">
+                Belief
+            </a>
+        
+            <a href="/tags/big-bang/" class="font_size_2">
+                Big Bang
+            </a>
+        
+            <a href="/tags/copenhagen-interpretation/" class="font_size_2">
+                Copenhagen Interpretation
+            </a>
+        
+            <a href="/tags/electron/" class="font_size_2">
+                Electron
+            </a>
+        
+            <a href="/tags/law-of-attraction/" class="font_size_2">
+                Law of Attraction
+            </a>
+        
+            <a href="/tags/pseudoscience/" class="font_size_2">
+                Pseudoscience
+            </a>
+        
+            <a href="/tags/quantum-mechanics/" class="font_size_2">
+                Quantum Mechanics
+            </a>
+        
+    </div>
+</section>
+                
+            
+        
+    
+</aside>
+
+
+            <main class="main full-width">
+    
+<article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/physics/" >
+                Physics
+            </a>
+        
+            <a href="/categories/science/" >
+                Science
+            </a>
+        
+            <a href="/categories/current/" >
+                Current
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h1 class="article-title">Understanding Measurement Process - All you need to know.</h1>
+    </div>
+
+  
+
+<div class="social-share-container">
+    <div class="social-share-buttons">
+        <ul>
+            <li class="share-icon">
+                <a href="#" title="Share">
+                    <i class="fas fa-share-square"></i>
+                </a>
+            </li>                       
+            <li>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2funderstanding-measurement-process%2f" target="_blank" rel="noopener noreferrer" title="Share on Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/intent/tweet?url=http%3a%2f%2flocalhost%3a1313%2fposts%2funderstanding-measurement-process%2f&text=Understanding%20Measurement%20Process%20-%20All%20you%20need%20to%20know." target="_blank" rel="noopener noreferrer" title="Share on Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=http%3a%2f%2flocalhost%3a1313%2fposts%2funderstanding-measurement-process%2f" target="_blank" rel="noopener noreferrer" title="Share on LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:?subject=Understanding%20Measurement%20Process%20-%20All%20you%20need%20to%20know.&body=http%3a%2f%2flocalhost%3a1313%2fposts%2funderstanding-measurement-process%2f" target="_blank" rel="noopener noreferrer" title="Share via Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://t.me/share/url?url=http%3a%2f%2flocalhost%3a1313%2fposts%2funderstanding-measurement-process%2f&text=Understanding%20Measurement%20Process%20-%20All%20you%20need%20to%20know." target="_blank" rel="noopener noreferrer" title="Share on Telegram">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://api.whatsapp.com/send?text=Understanding%20Measurement%20Process%20-%20All%20you%20need%20to%20know.%20http%3a%2f%2flocalhost%3a1313%2fposts%2funderstanding-measurement-process%2f" target="_blank" rel="noopener noreferrer" title="Share on WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+    
+    
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Apr 12, 2024</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    5 minute read
+                </time>
+            </div>
+        
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>Measurement is the process of knowing the value of a physical quantity. The reason for measuring something is to know the degree or order of an attribute.</p>
+<p>For example, if you want to know the mass of something or the weight of something, you try to measure it. But measurement is possible only when you compare the given thing with some standard. The standard has to be such that people all over the world can agree on the value represented by the standard. Currently, for the sake of universality and objectivity, we use the MKS system of units which is also called the S.I system of units. In the MKS system of units, we use the unit of meter for length, kilograms for mass, and seconds for time. But there are other systems of units as well. We need to refer to the conversion ratio to convert a given quantity from one system of units to another.</p>
+<h2 id="can-we-measure-everything">Can we measure everything?
+</h2><p>To answer this, let&rsquo;s talk about anger. Can you measure anger? Can you give a degree of precision as to how angry somebody is? No, you can’t. Not everything is measurable.</p>
+<p><img src="/images/understanding-measurement-process.webp"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Understanding measurement process"
+	
+	
+>
+Photo by <a class="link" href="https://unsplash.com/@graphicnode?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash"  target="_blank" rel="noopener"
+    >Graphic Node</a> on <a class="link" href="https://unsplash.com/photos/a-close-up-of-a-meter-on-a-tiled-wall-iLKK0eFTywU?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash"  target="_blank" rel="noopener"
+    >Unsplash</a></p>
+<p>Loosely speaking, we have two types of quantities depending upon whether we can measure them or not. Physical quantities are those which we can measure, and Non-physical quantities are those which we can&rsquo;t. One can also say that non-physical systems are more about the subjective experience of people, which by definition, is something that we can&rsquo;t measure.</p>
+<p>Naturally, these wouldn&rsquo;t fall under the radar of science. In science, we only talk about physical quantities. In doing so, we assign a numerical value to the attribute. Naturally, we would want this number to be as close as the actual value. This can be achieved by minimizing measurement errors as much as we can.</p>
+<h2 id="units-of-measurement">Units of measurement
+</h2><p>Just assigning a numerical estimate to the quantity isn&rsquo;t enough. The unit of a physical quantity is also extremely important and it goes together with the numerical value. The units are dependent on the convenience of our users. For example, if you want to measure the mass of a spoonful of salt, a good unit to use is &lsquo;gram&rsquo;. But if you are to measure the mass of an elephant, you have to use kilograms or at least metric tonnes for convenience&rsquo;s sake.</p>
+<p>People in the US and some other parts of the world are used to dealing with the imperial system involving units of (miles, feet, ounces, and pounds) so much so that metric system units (kilometers, meters, mL, kilograms) would be awkward and require constant conversions. So many books, documents, and other records all show imperial measurements. While the use of the metric system is a standard, it, therefore, makes sense to use other non-standard units as well simply for the sake of people’s convenience.</p>
+<h2 id="understanding-accuracy-and-precision">Understanding Accuracy and Precision
+</h2><p><img src="/images/accuracy-precision.webp"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Accuracy V/s Precision"
+	
+	
+><br>
+Photo by <a class="link" href="https://unsplash.com/@javaistan?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash"  target="_blank" rel="noopener"
+    >Afif Ramdhasuma</a> on <a class="link" href="https://unsplash.com/photos/red-white-and-black-round-wheel-RjqCk9MqhNg?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash"  target="_blank" rel="noopener"
+    >Unsplash</a></p>
+<p>In any measurement process, accuracy is how close the observed value is to the actual value. An example is how close an arrow gets to the bull’s-eye center in the picture above. The accuracy of a measurement is the relative exemption from errors. There is a minimum value that can be measured accurately. This is called the least count of that instrument. For eg: It is 0.1 cm for an ordinary scale.</p>
+<p>Precision is how repeatable a measurement process is. To be more precise, an independent measurement process should yield close enough observed outcomes to each other. An example is how close a second arrow is to the first one.</p>
+<h2 id="measurement-errors">Measurement Errors
+</h2><p>The measurement process can be a very vague one mainly because it is performed by humans. The bias of an experimenter introduces Random errors to the measurement. Not just that, Systematic errors are due to some known causes according to a definite law and tend to be in one direction, either positive or negative. Selecting better instruments or improving experimental techniques and procedures can help minimize systematic errors. Therefore, a standardization of the measurement process is necessary as well.</p>
+<p>Nonetheless, we can only do our part. There can be uncertainties and limitations as an inherent part of the measurement process. To give you a good example, if you consider a human ear a measuring instrument, its inherent limitation is that it can&rsquo;t differentiate between sounds 0.1 seconds apart. Two different sounds, less than 0.1 seconds apart in time are perceived to be one by the human ear.</p>
+<p>Therefore, we might very well use advanced measuring instruments to measure things with higher accuracy. Scientists with the help of laboratory equipment and computer-guided femtosecond lasers <em>[1 femtosecond = 10^(-15) seconds]</em> make fine incisions with pinpoint accuracy.</p>
+<p>With our recent understanding of the nature of the world around us, some uncertainty can be considered to be a part of nature. In quantum mechanics, we have an uncertainty principle that predicts an inherent uncertainty in the estimation of the position and momentum of a quantum particle. So, not all uncertainties are due to our inability to measure. Not all measurement uncertainties can be done away with by improving the measurement techniques or the set-up.</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/measurement/">Measurement</a>
+        
+            <a href="/tags/uncertainty/">Uncertainty</a>
+        
+            <a href="/tags/units-of-measurement/">Units of Measurement</a>
+        
+    </section>
+
+
+
+
+<div class="social-share-container">
+    <div class="social-share-buttons">
+        <ul>
+            <li class="share-icon">
+                <a href="#" title="Share">
+                    <i class="fas fa-share-square"></i>
+                </a>
+            </li>   
+            <li>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2funderstanding-measurement-process%2f" target="_blank" rel="noopener noreferrer" title="Share on Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/intent/tweet?url=http%3a%2f%2flocalhost%3a1313%2fposts%2funderstanding-measurement-process%2f&text=Understanding%20Measurement%20Process%20-%20All%20you%20need%20to%20know." target="_blank" rel="noopener noreferrer" title="Share on Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=http%3a%2f%2flocalhost%3a1313%2fposts%2funderstanding-measurement-process%2f" target="_blank" rel="noopener noreferrer" title="Share on LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:?subject=Understanding%20Measurement%20Process%20-%20All%20you%20need%20to%20know.&body=http%3a%2f%2flocalhost%3a1313%2fposts%2funderstanding-measurement-process%2f" target="_blank" rel="noopener noreferrer" title="Share via Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://t.me/share/url?url=http%3a%2f%2flocalhost%3a1313%2fposts%2funderstanding-measurement-process%2f&text=Understanding%20Measurement%20Process%20-%20All%20you%20need%20to%20know." target="_blank" rel="noopener noreferrer" title="Share on Telegram">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://api.whatsapp.com/send?text=Understanding%20Measurement%20Process%20-%20All%20you%20need%20to%20know.%20http%3a%2f%2flocalhost%3a1313%2fposts%2funderstanding-measurement-process%2f" target="_blank" rel="noopener noreferrer" title="Share on WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+    </footer>
+
+    
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+	const mainArticleElement = document.querySelector(".main-article");
+        renderMathInElement(mainArticleElement, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/posts/navigating-physics-career-from-nepal-myths-realities-advice/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Navigating Physics Career From Nepal: Myths, Realities and Advice on applying abroad for PhD</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/posts/law-of-attraction-closer-look/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">The Law of Attraction: A Closer Look</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/posts/time-dilation-shortest-introduction/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Time Dilation -Shortest Introduction</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/posts/sadhguru-pesudoscience-water-memory/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Sadhguru and the Pseudoscience of Water Memory</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+
+    <aside class="comment-section--wrapper">
+        
+            <h2 class="section-title">Comment Here</h2>
+            <div class="comment-section">
+                <div id="cusdis_thread"
+  data-host="https://cusdis.com"
+  data-app-id="753348e1-5c62-47b0-bc29-e73d1159a7cc"
+  data-page-id="http://localhost:1313/posts/understanding-measurement-process/"
+  data-page-url="http://localhost:1313/posts/understanding-measurement-process/"
+  data-page-title="Understanding Measurement Process - All you need to know."
+></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+            </div>
+        
+    </aside>
+    
+    
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 rskhatiwada
+    </section>
+    <a href="/index.xml">Subscribe to our RSS feed</a>
+    <section class="powerby">
+        
+    </section>
+</footer>
+
+    
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.771ba82fc31ed1ecbc605b4ad0b6b611f717f063384cce860b34240003b76eb5.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+
+
+
+</html>

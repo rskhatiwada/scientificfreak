@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Somewhere, Something Incredible is waiting to be Known">
+    <meta name="author" content="Raju S. Khatiwada">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="Personal Blog, Research, Publications,">
+    
+    <link rel="shortcut icon" href="/images/favicon.png">
+  
+    <title>{{ .Site.Title }} - Exploring Ideas, Science, and Beyond</title>
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="{{ .Site.Title }} - Exploring Ideas, Science, and Beyond">
+    <meta property="og:description" content="A Blog featuring Insights, and Research Ideas.">
+    <meta property="og:image" content="{{ .Site.BaseURL }}/images/social-rsk.webp">
+    <meta property="og:url" content="{{ .Site.BaseURL }}">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ .Site.Title }} - Exploring Ideas, Science, and Beyond">
+    <meta name="twitter:description" content="A Blog featuring Insights, and Research Ideas.">
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}/images/social-rsk.webp">
+    <meta name="twitter:creator" content="@rskhatiwada_np">
+  
+    <!-- Fonts and Styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  
+    <!-- Favicon and Preload -->
+    <link rel="icon" href="/images/favicon.png" sizes="32x32" type="image/png">
+    
+    <!-- Updated Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Updated Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Updated JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  </head>
+  
+
+<style>
+    /* Parallax Effect */
+    .parallax {
+        position: relative;
+        background-image: url('/images/rajubg.webp'); /* Ensure this path is correct */
+        height: 390px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        will-change: transform;
+        z-index: -1;
+    }
+
+    /* For desktop screens */
+    .parallax .content {
+        position: relative;
+        z-index: 1;
+    }
+
+    /* For mobile devices, change to scroll */
+    @media (max-width: 768px) {
+        .parallax {
+            background-attachment: scroll;
+            background-size: contain;
+            background-position: top;
+        }
+    }
+</style>
+
+<body class="home">
+
+    <header id="header">
+        <div id="head" class="parallax" parallax-speed="5">
+            <h1 id="logo" class="text-center">
+                <!-- Insert Image Above the Title -->
+                <img src="images/favicon.png" alt="Favicon" id="favicon" class="favicon-img" />
+                
+                <span class="title">Raju S. Khatiwada</span>
+                <span class="tagline">Researcher/ Graduate Student in Physics<br>
+                    <a href="mailto:r.khatiwada@goldengate.edu.np">r.khatiwada@goldengate.edu.np</a></span>
+            </h1>
+        </div>
+    </header>
+    
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto"> <!-- Use mx-auto for centering -->
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/links" rel="noopener noreferrer">Works</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/posts" rel="noopener noreferrer">Articles</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<script>
+    // JavaScript for the Parallax Effect
+    window.addEventListener('scroll', function() {
+        let scrollPosition = window.pageYOffset;
+        let parallax = document.querySelector('.parallax');
+        parallax.style.transform = 'translateY(' + scrollPosition * 0.14 + 'px)'; // Adjust the multiplier for the speed of scrolling
+    });
+</script>
+
+
+
+
+<!-- My Work Section -->
+<main id="main">
+    <div class="container">
+        <h2 class="section-title"> 
+            <a href="/links" class="archive-link">My Work (All Links)</a>
+        </h2> 
+    
+        <section class="row section featured topspace">
+            <div class="row g-4 mb-1"> <!-- Adds spacing at bottom -->
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-3"> <!-- Add margin-bottom -->
+                    <div class="info-box text-center p-3"> <!-- Add padding -->
+            
+                        <p>I am a co-author of the science book <i>The Realist</i>, where I explore complex scientific concepts in an accessible and engaging way for readers passionate about universe.
+                        <br><a href="https://a.co/d/4HqICV0" target="_blank" class="text-muted"><u>Get my Book</u> <i class="fas fa-external-link-alt" style="font-size: 1.2em;"></i></a></p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-3">
+                    <div class="info-box text-center p-3">
+                        <p>I've discussed scientific topics on various podcasts, sharing insights from my research and engaging in thoughtful conversations on the impact of science in our lives.
+                        <br><a href="https://youtu.be/0z34R6abEII?si=QGohbF9df5WRjYV8&t=116" target="_blank" class="text-muted"><u>Watch my Podcast</u> <i class="fas fa-external-link-alt" style="font-size: 1.2em;"></i></a></p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-3">
+                    <div class="info-box text-center p-3">
+                        <p>My research interests are flexible (mostly Astrophysics). I am fascinated by the intricate patterns and behaviors that govern the physical world.
+                        <br><a href="https://scholar.google.com/citations?user=B1MdEGwAAAAJ&hl=en" target="_blank" class="text-muted"><u>Read my Research</u> <i class="fas fa-external-link-alt" style="font-size: 1.2em;"></i></a></p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-3">
+                    <div class="info-box text-center p-3">
+                        <p>I have taught High School physics and maths for over five years. I am committed to help students build solid foundation for academic success.
+                        <br><a href="https://www.udemy.com/user/raju-sharma-khatiwada/" target="_blank" class="text-muted"><u>Buy a Course</u> <i class="fas fa-external-link-alt" style="font-size: 1.2em;"></i></a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+
+<!-- Articles Fetching -->
+
+<main id="main">
+    <div class="container">
+        <h2 class="section-title">
+            <a href="/posts" class="archive-link">My Articles (View All)</a>
+        </h2>        
+        <section class="homepage-content">
+            <div id="blog-posts" class="row">
+                <!-- ✅ Define $sortedPages properly before using it -->
+                {{ $allPages := where .Site.RegularPages "Type" "post" }}
+                {{ $sortedPages := sort $allPages ".Date" "desc" }}
+
+                <!-- ✅ Loop through all sorted pages -->
+                {{ range $sortedPages }}
+                    <div class="col-md-4 col-sm-6 mb-4 article-item" data-visible="false" style="display: none;">
+                        <div class="thumbnail info-box">
+                            <a href="{{ .Permalink }}">
+                                {{ if .Params.featured_image }}
+                                    <img src="{{ .Params.featured_image }}" alt="{{ .Title }}" class="zoom-image img-fluid">
+                                {{ end }}
+                                <h4 class="article-title">{{ .Title }}</h4>
+                            </a>
+                            <div class="caption mt-3">
+                                <p class="article-description">{{ .Params.description }}</p>
+                                <small class="text-muted">
+                                    {{ .Date.Format "January 2, 2006" }}
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                {{ end }}
+            </div>
+            <div class="text-center mt-2 mb-4">
+                <button id="loadMoreBtn" class="btn btn-action btn-lg">Load More</button>
+            </div>
+        </section>
+    </div>
+</main>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let articles = document.querySelectorAll(".article-item");
+        let displayedCount = 15; // Show 15 articles initially
+        let loadMoreAmount = 6; // Load 6 articles per click
+        let loadMoreBtn = document.getElementById("loadMoreBtn");
+
+        function showInitialArticles() {
+            console.log("Showing initial 15 articles");
+            for (let i = 0; i < displayedCount; i++) {
+                if (articles[i]) {
+                    articles[i].style.display = "block";
+                    articles[i].setAttribute("data-visible", "true");
+                }
+            }
+            updateLoadMoreButton();
+        }
+
+        function loadMoreArticles() {
+            console.log("Loading more articles...");
+            let newCount = displayedCount + loadMoreAmount;
+            let articleShown = 0;
+
+            for (let i = displayedCount; i < newCount; i++) {
+                if (articles[i]) {
+                    articles[i].style.display = "block";
+                    articles[i].setAttribute("data-visible", "true");
+                    articleShown++;
+                }
+            }
+
+            displayedCount += articleShown;
+            updateLoadMoreButton();
+        }
+
+        function updateLoadMoreButton() {
+            if (displayedCount >= articles.length) {
+                loadMoreBtn.style.display = "none";
+                console.log("All articles loaded, hiding Load More button.");
+            }
+        }
+
+        // Run functions on page load
+        showInitialArticles();
+
+        loadMoreBtn.addEventListener("click", function () {
+            loadMoreArticles();
+        });
+    });
+</script>
+
+
+
+<!-- Download CV Section -->
+
+<main id="main">
+    <div class="container">
+        <section class="row section topspace">
+            <div class="col-12">
+                <div class="panel panel-cta text-center">
+                    <div class="panel-body">
+                        <p class="mb-4 lead"><strong>Interested in My Work?</strong> Click Below!</p>
+                        <a href="/documents/raju_cv.pdf" class="btn btn-action btn-lg" download="raju_cv">
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+
+
+<!-- Podcast Section -->
+
+<main id="main">
+    <div class="container">
+        <section class="row section topspace" style="margin-bottom: 25px;">
+            <h2 class="section-title text-center">Watch My Podcast</h2>
+            <div class="col-12 d-flex justify-content-center">
+                <div class="embed-responsive embed-responsive-16by9" style="max-width: 800px;">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0z34R6abEII" 
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+
+    
+
+<footer id="footer">
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 widget text-md-left text-center mb-4 mb-md-0">
+            <h3 class="widget-title">Contact</h3>
+            <div class="widget-body">
+                <p>+977 984 271 1942<br>
+                <a href="mailto:r.khatiwada@goldengate.edu.np">r.khatiwada@goldengate.edu.np</a><br><br></p>    
+            </div>
+        </div>
+        <div class="col-md-4 widget text-center mb-4 mb-md-0">
+            <h3 class="widget-title">Follow Me</h3>
+            <div class="widget-body">
+                <p class="follow-me-icons d-flex justify-content-center">
+                    <a href="https://twitter.com/rskhatiwada_np" target="_blank" class="mx-2"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/rskhatiwada" target="_blank" class="mx-2"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/rs-khatiwada-ba35364b/" target="_blank" class="mx-2"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://instagram.com/yourprofile" target="_blank" class="mx-2"><i class="fab fa-instagram"></i></a>
+                    <a href="https://scholar.google.com/citations?user=B1MdEGwAAAAJ&hl=en" target="_blank" class="mx-2"><i class="fas fa-graduation-cap"></i></a>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 widget text-md-right text-center">
+            <h3 class="widget-title">Favorite Quote</h3>
+            <div class="widget-body">
+                <p>"Somewhere, Something Incredible is waiting to be Known" -Carl Sagan</p>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+
+<footer id="underfooter">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 text-md-left text-center">
+            <p>Kathmandu, Nepal</p>
+        </div>
+        <div class="col-md-6 text-md-right text-center">
+            <p>&copy; <span id="year"></span>, rskhatiwada</p>
+        </div>
+        
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+        
+    </div>
+</div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Select the header element
+      const header = document.querySelector('header');
+  
+      // Disable right-click only on the header
+      if (header) {
+        header.addEventListener('contextmenu', function (event) {
+          event.preventDefault();
+        });
+      }
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        function applyStyles() {
+            document.querySelectorAll('.info-box').forEach(el => {
+                el.style.background = "rgba(0, 0, 0, 0.07)";
+                el.style.padding = "10px";
+                el.style.borderRadius = "8px";
+                el.style.boxShadow = "2px 2px 2px rgba(0, 0, 0, 0.1)";
+            });
+    
+            document.querySelectorAll('.archive-link').forEach(el => {
+                el.style.fontSize = "1.8rem";
+                el.style.color = "#ffffff";
+                el.style.textDecoration = "none";
+                el.style.marginLeft = "10px";
+                el.style.fontWeight = "normal";
+            });
+        }
+    
+        // Apply styles on initial load
+        applyStyles();
+    
+        // Watch for new elements being added (MutationObserver)
+        const observer = new MutationObserver((mutations) => {
+            mutations.forEach((mutation) => {
+                if (mutation.addedNodes.length) {
+                    applyStyles();
+                }
+            });
+        });
+    
+        observer.observe(document.body, { childList: true, subtree: true });
+    
+        // Apply styles when "Load More" is clicked
+        document.getElementById('loadMoreBtn').addEventListener('click', function() {
+            setTimeout(applyStyles, 500); // Delay to ensure new content loads
+        });
+    });
+    </script>
+    
+</body>
+</html>

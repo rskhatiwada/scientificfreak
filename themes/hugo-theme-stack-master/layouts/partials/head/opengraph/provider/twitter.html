@@ -1,0 +1,20 @@
+{{- with .Site.Params.opengraph.twitter.site -}}
+    <meta name="twitter:site" content="@{{ . }}">
+    <meta name="twitter:creator" content="@{{ . }}">
+{{- end -}}
+
+{{- $title := .Title -}}
+{{- $description := .Summary | default .Params.description -}}
+
+<meta name="twitter:title" content="{{ $title | safeHTMLAttr }}">
+<meta name="twitter:description" content="{{ $description | safeHTMLAttr }}">
+
+{{- $image := "" -}}
+{{- with .Params.featured_image }}
+    {{- $image = absURL . }}
+{{- else }}
+    {{- $image = absURL "/images/social-rsk.webp" }}
+{{- end }}
+
+<meta name="twitter:card" content="{{ default `summary_large_image` .Site.Params.opengraph.twitter.card }}">
+<meta name="twitter:image" content="{{ $image }}" />
