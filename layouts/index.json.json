@@ -1,0 +1,15 @@
+[
+  {{- $pages := where .Site.RegularPages "Type" "post" -}}
+  {{- $sorted := sort $pages "Date" "desc" -}}
+  {{- range $i, $p := $sorted -}}
+    {{- if $i }},{{ end -}}
+    {
+      "title": {{ $p.Title | jsonify }},
+      "description": {{ $p.Params.description | jsonify }},
+      "date": "{{ $p.Date.Format "January 2, 2006" }}",
+      "permalink": "{{ $p.Permalink }}",
+      "featured_image": {{ $p.Params.featured_image | jsonify }}
+    }
+  {{- end -}}
+  ]
+  
