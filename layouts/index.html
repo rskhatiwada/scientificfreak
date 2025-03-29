@@ -166,7 +166,7 @@
 <main id="main">
     <div class="container">
         <h2 class="section-title">
-            <a href="/posts" class="archive-link">My Articles (View All)</a>
+            <a href="/posts" class="archive-link">Articles (View All)</a>
         </h2>        
         <section class="homepage-content">
             <div id="blog-posts" class="row">
@@ -178,12 +178,15 @@
                 {{ range $sortedPages }}
                     <div class="col-md-4 col-sm-6 mb-4 article-item" data-visible="false" style="display: none;">
                         <div class="thumbnail info-box">
-                            <a href="{{ .Permalink }}">
-                                {{ if .Params.featured_image }}
-                                    <img src="{{ .Params.featured_image }}" alt="{{ .Title }}" class="zoom-image img-fluid">
-                                {{ end }}
-                                <h4 class="article-title">{{ .Title }}</h4>
-                            </a>
+                            {{ if .Params.featured_image }}
+    <a href="{{ .Permalink }}">
+        <img src="{{ .Params.featured_image }}" alt="{{ .Title }}" class="zoom-image img-fluid">
+    </a>
+{{ end }}
+<h4 class="article-title">
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+</h4>
+
                             <div class="caption mt-3">
                                 <p class="article-description">{{ .Params.description }}</p>
                                 <small class="text-muted">
