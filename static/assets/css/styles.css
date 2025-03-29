@@ -492,12 +492,16 @@ a:hover {
 
 .thumbnail.info-box {
   transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border-radius: 10px; /* <--- Add this for rounded corners */
+  overflow: hidden; /* Ensures inner elements (like image) respect the border-radius */
 }
 
 .thumbnail.info-box:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transform: translateY(-2px);
+  border-radius: 10px; /* Optional: reaffirm on hover */
 }
+
 
 
 
