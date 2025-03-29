@@ -176,25 +176,22 @@
 
                 <!-- ✅ Loop through all sorted pages -->
                 {{ range $sortedPages }}
-                    <div class="col-md-4 col-sm-6 mb-4 article-item" data-visible="false" style="display: none;">
-                        <div class="thumbnail info-box">
-                            {{ if .Params.featured_image }}
-    <a href="{{ .Permalink }}">
-        <img src="{{ .Params.featured_image }}" alt="{{ .Title }}" class="zoom-image img-fluid">
-    </a>
-{{ end }}
-<h4 class="article-title">
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
-</h4>
-
-                            <div class="caption mt-3">
-                                <p class="article-description">{{ .Params.description }}</p>
-                                <small class="text-muted">
-                                    {{ .Date.Format "January 2, 2006" }}
-                                </small>
-                            </div>
-                        </div>
+                    <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="thumbnail info-box">
+                      {{ if .Params.featured_image }}
+                        <a href="{{ .Permalink }}">
+                          <img src="{{ .Params.featured_image }}" alt="{{ .Title }}" class="zoom-image img-fluid">
+                        </a>
+                      {{ end }}
+                      <h4 class="article-title">
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                      </h4>
+                      <div class="caption mt-3">
+                        <p class="article-description">{{ .Params.description }}</p>
+                        <small class="text-muted">{{ .Date.Format "January 2, 2006" }}</small>
+                      </div>
                     </div>
+                  </div>
                 {{ end }}
             </div>
             <div class="text-center mt-2 mb-4">
