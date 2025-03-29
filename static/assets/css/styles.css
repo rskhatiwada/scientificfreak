@@ -502,17 +502,6 @@ a:hover {
   border-radius: 10px; /* Optional: reaffirm on hover */
 }
 
-.zoom-image {
-  width: 100%;
-  aspect-ratio: 16/9;
-  object-fit: cover;
-  margin-bottom: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: block;
-
-  /* Remove or override any existing radius */
-  border-radius: 0;
-}
 
 
 
