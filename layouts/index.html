@@ -162,98 +162,93 @@
 
 
 <!-- Articles Fetching -->
-
 <main id="main">
     <div class="container">
-        <h2 class="section-title">
-            <a href="/posts" class="archive-link">Articles (View All)</a>
-        </h2>        
-        <section class="homepage-content">
-            <div id="blog-posts" class="row">
-                <!-- ✅ Define $sortedPages properly before using it -->
-                {{ $allPages := where .Site.RegularPages "Type" "post" }}
-                {{ $sortedPages := sort $allPages ".Date" "desc" }}
-
-                <!-- ✅ Loop through all sorted pages -->
-                {{ range $sortedPages }}
-                    <div class="col-md-4 col-sm-6 mb-4 article-item" style="display: none;">
-    <div class="thumbnail info-box">
-        {{ if .Params.featured_image }}
-            <a href="{{ .Permalink }}">
-                <img src="{{ .Params.featured_image }}" alt="{{ .Title }}" class="zoom-image img-fluid">
-            </a>
-        {{ end }}
-        <h4 class="article-title">
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-        </h4>
-        <div class="caption mt-3">
-            <p class="article-description">{{ .Params.description }}</p>
-            <small class="text-muted">
-                {{ .Date.Format "January 2, 2006" }}
-            </small>
+      <h2 class="section-title">
+        <a href="/posts" class="archive-link">Articles (View All)</a>
+      </h2>        
+      
+      <section class="homepage-content">
+        <div id="blog-posts" class="row">
+          <!-- JS will inject articles here -->
         </div>
+  
+        <div class="text-center mt-2 mb-4">
+          <button id="loadMoreBtn" class="btn btn-action btn-lg">Load More</button>
+        </div>
+      </section>
     </div>
-</div>
+  </main>
+  
 
-                {{ end }}
-            </div>
-            <div class="text-center mt-2 mb-4">
-                <button id="loadMoreBtn" class="btn btn-action btn-lg">Load More</button>
-            </div>
-        </section>
-    </div>
-</main>
 
 
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        let articles = document.querySelectorAll(".article-item");
-        let displayedCount = 15; // Show 15 articles initially
-        let loadMoreAmount = 6; // Load 6 articles per click
-        let loadMoreBtn = document.getElementById("loadMoreBtn");
+let articles = [];
+let displayedCount = 0;
+let loadCounts = [15, 6];
+let loadIndex = 0;
 
-        function showInitialArticles() {
-            console.log("Showing initial 15 articles");
-            for (let i = 0; i < displayedCount; i++) {
-                if (articles[i]) {
-                    articles[i].style.display = "block";
-                    articles[i].setAttribute("data-visible", "true");
-                }
-            }
-            updateLoadMoreButton();
+async function fetchArticles() {
+    try {
+      const response = await fetch('/index.json');
+      articles = await response.json();
+  
+      // Sort by date descending
+      articles.sort((a, b) => new Date(b.date) - new Date(a.date));
+  
+      // 🔥 Load the initial batch immediately
+      loadMoreArticles();
+  
+    } catch (error) {
+      console.error("Error fetching articles:", error);
+    }
+  }
+  
+
+function loadMoreArticles() {
+    let loadMore = loadIndex < loadCounts.length ? loadCounts[loadIndex] : 6;
+    let container = document.getElementById('blog-posts');
+
+    for (let i = displayedCount; i < displayedCount + loadMore && i < articles.length; i++) {
+        let article = articles[i];
+        container.insertAdjacentHTML('beforeend', `
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="thumbnail info-box">
+                    <a href="${article.permalink}">
+                        ${article.featured_image ? `<img src="${article.featured_image}" alt="${article.title}" class="zoom-image img-fluid">` : ''}
+                        <h4 class="article-title">${article.title}</h4>
+                    </a>
+                    <div class="caption mt-3">
+                        <p class="article-description">${article.description}</p>
+                        <small class="text-muted">${article.date}</small>
+                    </div>
+                </div>
+            </div>
+        `);
+    }
+
+    displayedCount += loadMore;
+    loadIndex++;
+
+    if (displayedCount >= articles.length) {
+        document.getElementById('loadMoreBtn').style.display = 'none';
+    }
+}
+
+document.getElementById('loadMoreBtn').addEventListener('click', loadMoreArticles);
+
+window.addEventListener('load', () => {
+    fetchArticles().then(() => {
+        if (displayedCount >= articles.length) {
+            document.getElementById('loadMoreBtn').style.display = 'none';
         }
-
-        function loadMoreArticles() {
-            console.log("Loading more articles...");
-            let newCount = displayedCount + loadMoreAmount;
-            let articleShown = 0;
-
-            for (let i = displayedCount; i < newCount; i++) {
-                if (articles[i]) {
-                    articles[i].style.display = "block";
-                    articles[i].setAttribute("data-visible", "true");
-                    articleShown++;
-                }
-            }
-
-            displayedCount += articleShown;
-            updateLoadMoreButton();
-        }
-
-        function updateLoadMoreButton() {
-            if (displayedCount >= articles.length) {
-                loadMoreBtn.style.display = "none";
-                console.log("All articles loaded, hiding Load More button.");
-            }
-        }
-
-        // Run functions on page load
-        showInitialArticles();
-
-        loadMoreBtn.addEventListener("click", function () {
-            loadMoreArticles();
-        });
     });
+});
+
+document.getElementById('loadMoreBtn').addEventListener('click', function() {
+    this.blur();
+});
 </script>
 
 
