@@ -500,24 +500,6 @@ a:hover {
   flex-grow: 1.2;
 }
 
-/* Add hover effect to article title link */
-.article-title a {
-  color: #000;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.article-title a:hover {
-  color: #007bff; /* Choose whatever hover color fits your theme */
-  text-decoration: underline;
-}
-
-/* REMOVE any scaling hover effect on .info-box */
-.thumbnail.info-box:hover {
-  transform: none;
-  box-shadow: none;
-}
-
 
 
 
