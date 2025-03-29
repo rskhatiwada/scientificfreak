@@ -472,25 +472,28 @@ a:hover {
   transition: font-size 0.3s ease;
 }
 
-.article-title a {
+.article-title {
   -webkit-line-clamp: 2;
   min-height: 2.5em;
   font-size: 1.2rem;
-  color: #222 !important; /* Or any color you prefer */
-  text-decoration: none;
-  transition: color 0.3s ease;
+  color: #222 !important; /* or #333 or any dark grey you prefer */
 }
-
-.article-title a:hover {
-  color: #007bff; /* Or your hover color */
-  text-decoration: underline;
-}
-
 
 .article-description {
   -webkit-line-clamp: 2;
   min-height: 2em;
   font-size: 0.85rem;
+}
+
+.article-title a {
+  color: #222 !important;       /* Your desired title color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.article-title a:hover {
+  color: #007bff;               /* Optional: hover color */
+  text-decoration: underline;
 }
 
 .article-date {
