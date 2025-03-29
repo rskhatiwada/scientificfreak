@@ -476,6 +476,7 @@ a:hover {
   -webkit-line-clamp: 2;
   min-height: 2.5em;
   font-size: 1.1rem;
+  color: #222; /* or #333 or any dark grey you prefer */
 }
 
 .article-description {
