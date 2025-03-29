@@ -490,16 +490,13 @@ a:hover {
 }
 
 .thumbnail.info-box {
-  padding: 15px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.caption {
-  flex-grow: 1.2;
+.thumbnail.info-box:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
 }
-
 
 
 
