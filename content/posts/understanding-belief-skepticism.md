@@ -1,6 +1,6 @@
 +++
 date = '2018-06-13T17:49:25+05:45'
-draft = false
+draft = true
 enable_social_share = true
 title = 'Understanding Belief and Skepticism in Divine'
 authorName = "Raju S. Khatiwada"
