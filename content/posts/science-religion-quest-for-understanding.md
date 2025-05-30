@@ -1,6 +1,6 @@
 +++
 date = '2018-03-13T19:20:57+05:45'
-draft = false
+draft = true
 enable_social_share = true
 title = 'Science, Religion and the Quest for Understanding'
 authorName = "Raju S. Khatiwada"
