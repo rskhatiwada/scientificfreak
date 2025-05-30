@@ -1,6 +1,6 @@
 +++
 date = '2017-03-18T23:38:10+05:45'
-draft = false
+draft = true
 enable_social_share = true
 title = 'Celebrating Freedom of Thought'
 authorName = "Raju S. Khatiwada"
